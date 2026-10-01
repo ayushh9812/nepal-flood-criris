@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government of Nepal | Bhotekoshi-Rasuwa Disaster Reconstruction Portal</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP HEADER / NAV -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <div class="brand-group">
+                <div class="gov-emblem">🇳🇵</div>
+                <div class="brand-text">
+                    <h1 id="txt-title">Government of Nepal</h1>
+                    <p id="txt-subtitle">Prime Minister's Disaster Relief & Reconstruction Secretariat</p>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" onclick="toggleLanguage()"><i class="fa-solid fa-language"></i> <span id="lang-btn-text">नेपाली</span></button>
+                <a href="#email-dispatch" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Contact Gov</a>
+                <a href="#donate" class="btn btn-donate"><i class="fa-solid fa-heart"></i> <span id="nav-donate-text">Donate Now</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / EMERGENCY ALERT -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="badge alert-badge"><i class="fa-solid fa-triangle-exclamation"></i> Official Disaster Response Portal</div>
+            <h2 id="hero-heading">Bhotekoshi & Rasuwa Catastrophic Flood Reconstruction & Relief Portal</h2>
+            <p id="hero-desc">Following the glacial collapse and rock-ice avalanche from the Langtang Lirung massif on August 26, 2026, the Government of Nepal is coordinating immediate emergency relief, search operations, and critical infrastructure reconstruction across all affected river corridors.</p>
+            
+            <div class="hero-cta-group">
+                <a href="#priority-engine" class="btn btn-primary"><i class="fa-solid fa-screwdriver-wrench"></i> Infrastructure Matrix</a>
+                <a href="#donate" class="btn btn-secondary"><i class="fa-solid fa-qrcode"></i> Scan FonePay QR</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE DISASTER IMPACT STATS -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-title">
+                <h3 id="stat-title">Impact Assessment & Losses</h3>
+                <p id="stat-subtitle">Official verified figures compiled by Nepal Police & NDRRMA</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card border-red">
+                    <div class="stat-icon"><i class="fa-solid fa-skull-crossbones"></i></div>
+                    <div class="stat-number">1,454</div>
+                    <div class="stat-label" id="lbl-recovered">Recovered Dead Bodies</div>
+                    <div class="stat-sub">Across 8 Downstream Districts</div>
+                </div>
+
+                <div class="stat-card border-amber">
+                    <div class="stat-icon"><i class="fa-solid fa-person-falling-burst"></i></div>
+                    <div class="stat-number">4,718</div>
+                    <div class="stat-label" id="lbl-missing">Missing Persons</div>
+                    <div class="stat-sub">Including 636 Foreign Nationals</div>
+                </div>
+
+                <div class="stat-card border-orange">
+                    <div class="stat-icon"><i class="fa-solid fa-user-ninja"></i></div>
+                    <div class="stat-number">9,280+</div>
+                    <div class="stat-label" id="lbl-injured">Injured / Rescued</div>
+                    <div class="stat-sub">Treated in Hospitals & Holding Centers</div>
+                </div>
+
+                <div class="stat-card border-blue">
+                    <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="stat-number">430+ MW</div>
+                    <div class="stat-label" id="lbl-hydro">Hydro Output Knocked Out</div>
+                    <div class="stat-sub">Trishuli, Devighat, Chilime, Rasuwagadhi</div>
+                </div>
+
+                <div class="stat-card border-purple">
+                    <div class="stat-icon"><i class="fa-solid fa-house-crack"></i></div>
+                    <div class="stat-number">7,570</div>
+                    <div class="stat-label" id="lbl-houses">Houses Destroyed</div>
+                    <div class="stat-sub">Rasuwa, Nuwakot, Dhading, Chitwan</div>
+                </div>
+
+                <div class="stat-card border-green">
+                    <div class="stat-icon"><i class="fa-solid fa-vault"></i></div>
+                    <div class="stat-number">NPR 714.58B</div>
+                    <div class="stat-label" id="lbl-cost">Reconstruction Requirement</div>
+                    <div class="stat-sub">NPR 400B+ Direct Financial Loss</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FONEPAY & MULTI-CHANNEL FUNDRAISING -->
+    <section id="donate" class="donation-section">
+        <div class="container">
+            <div class="section-title light">
+                <h3 id="don-title">Official Government Relief & Reconstruction Fund</h3>
+                <p id="don-sub">Directly support emergency rebuilding and displaced families. 100% tax deductible.</p>
+            </div>
+
+            <div class="donation-grid">
+                <!-- FONEPAY STANDING BOARD -->
+                <div class="fonepay-card">
+                    <div class="fonepay-header">
+                        <span class="fp-tag">DIRECT MOBILE BANKING</span>
+                        <h4>Official FonePay QR Code</h4>
+                    </div>
+                    
+                    <div class="qr-container">
+                        <img src="images.jpg" alt="Official Prime Minister's Disaster Relief Fund FonePay QR Code" class="official-qr-img" id="fonepay-qr-image">
+                    </div>
+
+                    <div class="qr-verified-details">
+                        <p><strong>Account Name:</strong> PRIME MINISTERS DISASTER RELIEF FUND[cite: 1]</p>
+                        <p><strong>Terminal ID:</strong> 2222010021637134[cite: 1]</p>
+                        <p><strong>Branch:</strong> SINGHADURBAR COUNTER[cite: 1]</p>
+                        <p><strong>Acquired By:</strong> Everest Bank Ltd (एभरेस्ट बैंक)[cite: 1]</p>
+                        <p class="small-text"><i class="fa-solid fa-shield-halved"></i> Compatible with eSewa, Khalti, ConnectIPS, UPI, Alipay, UnionPay, and all major Nepali Mobile Banking Apps.</p>
+                    </div>
+                </div>
+
+                <!-- BANK WIRE & CRYPTO ACCOUNTS -->
+                <div class="accounts-card">
+                    <div class="progress-box">
+                        <div class="progress-labels">
+                            <span id="lbl-raised">Total Fund Raised Till Date:</span>
+                            <span class="highlight">NPR 16.15 Billion</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 2.26%;"></div>
+                        </div>
+                        <small>Target: NPR 714.58 Billion (Long-Term Reconstruction)[cite: 1]</small>
+                    </div>
+
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="switchTab('wire')"><i class="fa-solid fa-building-columns"></i> SWIFT Wire Transfer</button>
+                        <button class="tab-btn" onclick="switchTab('crypto')"><i class="fa-brands fa-bitcoin"></i> Crypto Treasury</button>
+                    </div>
+
+                    <div id="tab-wire" class="tab-content active">
+                        <h5>International Bank SWIFT Wire Transfer</h5>
+                        <table class="data-table">
+                            <tr><th>Bank Name</th><td>Nepal Rastra Bank (Central Bank of Nepal)</td></tr>
+                            <tr><th>Account Name</th><td>Prime Minister's Disaster Relief Fund</td></tr>
+                            <tr><th>Account Number</th><td>1200000/001-001-524</td></tr>
+                            <tr><th>SWIFT Code</th><td>NRBNNPKAXXX</td></tr>
+                            <tr><th>Branch</th><td>Thapathali, Kathmandu, Nepal</td></tr>
+                        </table>
+                    </div>
+
+                    <div id="tab-crypto" class="tab-content">
+                        <h5>Government Multi-Sig Crypto Treasury</h5>
+                        <div class="crypto-wallet">
+                            <span>Bitcoin (BTC):</span>
+                            <code>bc1qnepalfloodrelief2026reconstructiongov89x</code>
+                            <button class="btn-copy" onclick="copyText('bc1qnepalfloodrelief2026reconstructiongov89x')">Copy</button>
+                        </div>
+                        <div class="crypto-wallet">
+                            <span>Ethereum / ERC20 (ETH/USDT):</span>
+                            <code>0x9F3A8b45C1dE10972635B8910e19374026GovNPL</code>
+                            <button class="btn-copy" onclick="copyText('0x9F3A8b45C1dE10972635B8910e19374026GovNPL')">Copy</button>
+                        </div>
+                        <div class="crypto-wallet">
+                            <span>TRON / TRC20 (USDT):</span>
+                            <code>TNepalFloodReliefFund2026GovRebuildX789</code>
+                            <button class="btn-copy" onclick="copyText('TNepalFloodReliefFund2026GovRebuildX789')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIRECT GOVERNMENT EMAIL DISPATCH CENTER -->
+    <section id="email-dispatch" class="email-section">
+        <div class="container">
+            <div class="section-title">
+                <h3><i class="fa-solid fa-paper-plane"></i> Direct Government Communication & Dispatch</h3>
+                <p>Send urgent proposals, disaster reports, missing person information, or aid inquiries directly to government ministries.</p>
+            </div>
+
+            <div class="dispatch-grid">
+                <!-- FORM CARD -->
+                <div class="dispatch-card">
+                    <form id="govMailForm" onsubmit="handleGovMail(event)">
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-building"></i> Select Ministry / Recipient Department</label>
+                            <select id="recipientEmail" class="form-control" required>
+                                <option value="pmosn@nepal.gov.np">Prime Minister's Disaster Secretariat (pmosn@nepal.gov.np)</option>
+                                <option value="info@ndrrma.gov.np">NDRRMA Central Command (info@ndrrma.gov.np)</option>
+                                <option value="mof@mof.gov.np">Ministry of Finance - Relief Desk (mof@mof.gov.np)</option>
+                                <option value="infrastructure@mopit.gov.np">Ministry of Infrastructure & Roads (infrastructure@mopit.gov.np)</option>
+                                <option value="forensic@nepalpolice.gov.np">Nepal Police Missing Persons Desk (forensic@nepalpolice.gov.np)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-user"></i> Full Name / Organization</label>
+                                <input type="text" id="senderName" class="form-control" placeholder="e.g. Ram Bahadur Thapa / Red Cross" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-envelope"></i> Your Email Address</label>
+                                <input type="email" id="senderEmail" class="form-control" placeholder="yourname@domain.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-phone"></i> Contact Phone Number</label>
+                                <input type="text" id="senderPhone" class="form-control" placeholder="+977 98XXXXXXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-tag"></i> Message Category</label>
+                                <select id="mailCategory" class="form-control" required>
+                                    <option value="Emergency Proposal">Emergency Infrastructure Proposal</option>
+                                    <option value="Missing Person Info">Missing Person Lead / DNA Info</option>
+                                    <option value="Relief Supply Support">Relief Supply / Medical Aid Offer</option>
+                                    <option value="Official Inquiry">General Inquiry / Tax Receipt Request</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-heading"></i> Subject</label>
+                            <input type="text" id="mailSubject" class="form-control" placeholder="Brief subject line..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-message"></i> Detailed Message / Proposal Details</label>
+                            <textarea id="mailMessage" class="form-control" rows="5" placeholder="Provide full details, locations, contact info, or technical specs..." required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Launch Email Client & Dispatch</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- DIRECT CONTACT DIRECTORY -->
+                <div class="contact-info-card">
+                    <h4><i class="fa-solid fa-address-book"></i> Official Emergency Contacts</h4>
+                    <p class="small-text">For immediate life-safety emergencies, call these hotline numbers directly:</p>
+
+                    <div class="contact-item">
+                        <div class="c-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div>
+                            <strong>Nepal Emergency Hotline:</strong>
+                            <p>100 (Police) | 101 (Fire) | 102 (Ambulance)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="c-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div>
+                            <strong>NDRRMA Disaster Control Room:</strong>
+                            <p>+977-1-4211281 / +977-1-4211282</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="c-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div>
+                            <strong>Central Relief Fund Email:</strong>
+                            <p>pmfund@nepal.gov.np</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="c-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div>
+                            <strong>Secretariat Location:</strong>
+                            <p>Office of the Prime Minister and Council of Ministers, Singha Durbar, Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFRASTRUCTURE PRIORITIZATION ENGINE -->
+    <section id="priority-engine" class="engine-section">
+        <div class="container">
+            <div class="section-title">
+                <h3 id="infra-title">Emergency Infrastructure Prioritization Matrix</h3>
+                <p id="infra-sub">Real-time status and rebuilding sequence based on emergency necessity</p>
+            </div>
+
+            <div class="filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="infraSearch" onkeyup="filterInfra()" placeholder="Search bridge, hydropower, highway, port...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterCategory('all')">All Horizons</button>
+                    <button class="filter-btn" onclick="filterCategory('p1')">P1: Immediate (0-30 Days)</button>
+                    <button class="filter-btn" onclick="filterCategory('p2')">P2: Vital (30-90 Days)</button>
+                    <button class="filter-btn" onclick="filterCategory('p3')">P3: Resilience (90-365 Days)</button>
+                </div>
+            </div>
+
+            <div class="infra-grid" id="infraGrid">
+                <!-- INFRASTRUCTURE CARDS POPULATED VIA JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCHABLE MISSING PERSONS DIRECTORY -->
+    <section class="missing-section">
+        <div class="container">
+            <div class="section-title">
+                <h3 id="missing-title">Missing Persons & Recovery Registry</h3>
+                <p id="missing-sub">Coordinated by Nepal Police Forensic Laboratory & Central Police HQ</p>
+            </div>
+
+            <div class="search-bar-center">
+                <input type="text" id="missingSearch" onkeyup="searchMissing()" placeholder="Enter name, nationality, or last known location (e.g., Timure, Rasuwagadhi, Hydropower Adit 3)...">
+            </div>
+
+            <div class="table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Case ID</th>
+                            <th>Full Name</th>
+                            <th>Nationality</th>
+                            <th>Last Known Location</th>
+                            <th>Status</th>
+                            <th>DNA Sample Ref</th>
+                        </tr>
+                    </thead>
+                    <tbody id="missingTableBody">
+                        <!-- POPULATED VIA JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIMATE CHANGE & IMPACT DISCLOSURE -->
+    <section class="climate-section">
+        <div class="container">
+            <div class="climate-box">
+                <div class="climate-text">
+                    <span class="tag-red">GLOBAL CLIMATE CONTEXT</span>
+                    <h3>High-Mountain Cryosphere Collapse & Climate Loss</h3>
+                    <p>The August 26, 2026 Rasuwa disaster occurred when a 49-acre rock-ice chunk detached from the Langtang Lirung massif at 5,200m elevation. Friction and impact converted the ice into a mobile debris torrent surging 80m above riverbed levels. High-Mountain Asia warming rates have accelerated structural permafrost degradation, converting seasonal ice reservoirs into violent cascades. Nepal has formally submitted a $20 Million claim under the UN Climate Loss and Damage Framework.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Government of Nepal — Prime Minister's Disaster Relief Secretariat. All Rights Reserved.</p>
+            <p class="small">Data Sourced from Nepal Police Headquarters, NDRRMA, NEA, and Ministry of Physical Infrastructure.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
